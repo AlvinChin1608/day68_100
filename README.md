@@ -28,7 +28,11 @@ In my Flask application, I worked on enhancing user authentication security by a
 
 ![](https://github.com/AlvinChin1608/day68_100/blob/main/gif_demo/demo_login.gif)
 
+### Database of registered user
 ![](https://github.com/AlvinChin1608/day68_100/blob/main/gif_demo/demo_credential.png)
 
-## Email already exist
+### Email already exist
 ![](https://github.com/AlvinChin1608/day68_100/blob/main/gif_demo/ScreenRecording2024-12-30at14.58.40-ezgif.com-video-to-gif-converter.gif)
+
+### Invalid password or email
+![](https://github.com/AlvinChin1608/day68_100/blob/main/gif_demo/ScreenRecording2024-12-30at14.48.43-ezgif.com-video-to-gif-converter.gif)
