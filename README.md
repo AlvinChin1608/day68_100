@@ -29,3 +29,6 @@ In my Flask application, I worked on enhancing user authentication security by a
 ![](https://github.com/AlvinChin1608/day68_100/blob/main/gif_demo/demo_login.gif)
 
 ![](https://github.com/AlvinChin1608/day68_100/blob/main/gif_demo/demo_credential.png)
+
+## Email already exist
+![](https://github.com/AlvinChin1608/day68_100/blob/main/gif_demo/ScreenRecording2024-12-30at14.58.40-ezgif.com-video-to-gif-converter.gif)
