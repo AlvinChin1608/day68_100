@@ -51,9 +51,16 @@ def generate_salt(length=9):
 @app.route('/register', methods=["GET","POST"])
 def register():
     if request.method == "POST":
+        email = request.form.get('email')
+        # Check if the email already exist
+        existing_user = User.query.filter_by(email=email).first()
+        if existing_user:
+            flash("Email already exists. Please use a different email")
+            return redirect(url_for("register"))
+
         salt = generate_salt()
         new_user = User(
-            email = request.form.get('email'),
+            email=email,
             name = request.form.get('name'),
             # Good practice not to store password in plaintext
             password = generate_password_hash(request.form.get('password') + salt),
@@ -78,8 +85,12 @@ def login():
             if check_password_hash(user.password, salted_password):
                 login_user(user)
                 return redirect(url_for("secrets", name=user.name))
-        flash("Invalid email or password, please try again.")
-        return redirect(url_for("login"))
+            else:
+                print("Flashing invalid password")
+                flash("Invalid password. Please try again", "danger")
+        else:
+            print("Flashing invalid email")
+            flash("Invalid email or password, please try again.", "danger")
     return render_template("login.html")
 
 
