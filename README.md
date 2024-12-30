@@ -26,7 +26,7 @@ In my Flask application, I worked on enhancing user authentication security by a
   - Salting makes it harder for attackers to crack passwords even if they have access to the hashed password database.
   - Combining salting with hashing ensures that passwords are stored securely, mitigating the risk of password breaches.
 
-### Login
+### Register and then Login
 ![](https://github.com/AlvinChin1608/day68_100/blob/main/gif_demo/demo_login.gif)
 
 ### Database of registered user
